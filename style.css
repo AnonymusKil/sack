@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+header {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(10, 10, 10, 0.5),
+      rgb(10, 10, 10, 0.75)
+    ),
+    url("./image/Netflix-Background.jpg");
+  padding: 10px 98px;
+  height: 80vh;
+  border-bottom: 8px solid #6666;
+  color: white;
+}
+
+.logo img {
+  width: 100%;
+}
+.logo {
+  width: 120px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 78px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero-info_1 {
+  margin-block: 16px;
+}
+.hero-info_2 {
+  margin-bottom: 8px;
+}
+.hero input {
+  background-color: #6664;
+  border: 1.5px solid #666;
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.hero input::placeholder {
+  color: white;
+}
+
+form,
+nav {
+  button {
+    background-color: red;
+    color: white;
+    border: 1.5px solid red;
+    padding: 8px 12px;
+    border-radius: 0.1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(250, 10, 10);
+      border: 1.5px solid rgb(250, 10, 10);
+    }
+  }
+}
+.seperator-Line {
+  height: 0.5rem;
+  background-color: #666;
+  border: none;
+}
+
+.Section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgb(10, 10, 10));
+}
+
+#paragraph-img2 {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 5.6rm;
+  border: 0.1px solid #fff;
+  gap: 1rem;
+  margin: 0 auto;
+  height: 5.6rem;
+  padding: 0.4rem 1rem;
+  border-radius: 7px;
+  flex-basis: 50%;
+  border-width: 20%;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.paragraph-info {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.diss {
+  margin-left: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.juh {
+  text-align: center;
+}
+.d-wrapper {
+  flex-wrap: wrap;
+}
+
+.d-boxes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.boxx {
+  margin-top: 2%;
+}
+
+.d-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 252, 252, 0.219);
+  padding: 1rem;
+  width: 75%;
+  align-items: center;
+  position: relative;
+}
+
+.d-emwrap {
+  align-items: center;
+  flex-direction: column;
+}
+
+.email input {
+  background-color: transparent;
+  background-color: rgba(255, 252, 252, 0.048);
+  border: none;
+  padding: 1rem 1rem;
+  width: 27%;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  border: 0.1px solid rgba(255, 255, 255, 0.459);
+  align-items: center;
+}
+
+.d-box:hover {
+  background-color: rgba(255, 252, 252, 0.308);
+
+  transition: 0.5s;
+}
+
+.dropdownMenu {
+  overflow: hidden;
+  max-height: 0;
+  visibility: collapse;
+  max-height: 0;
+  width: 75%;
+  padding: 0 1.5rem;
+  -webkit-transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  text-align: left;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  margin-top: 0.2%;
+}
+
+.dropdownMenu h3 {
+  padding: 0%;
+  text-align: left;
+}
+
+.faq.open .dropdownMenu {
+  overflow: hidden;
+  visibility: visible;
+  max-height: 0px;
+  padding: 0px 1.5rem;
+  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1) 0s;
+  text-align: left;
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  max-height: 75rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.d-container h1 {
+  text-align: center;
+}
+
+.d-container h3 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.d-container {
+  padding: 5% 0%;
+  flex-wrap: wrap;
+}
+
+.first-link {
+  flex-direction: column;
+  display: flex;
+  row-gap: 12px;
+  line-height: 1.3125rem;
+}
+
+.d-links {
+  display: flex;
+  padding: 0% 1% 15% 10%;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  cursor: pointer;
+}
+.but {
+  margin-top: -13%;
+
+  margin-left: 10%;
+}
+
+.but button {
+  padding: 10px 18px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.but button .iconss {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.second-link {
+  flex-direction: column;
+  display: flex;
+  row-gap: 12px;
+  margin-left: 20%;
+  line-height: 1.3125rem;
+}
+
+.third-link {
+  flex-direction: column;
+  display: flex;
+  row-gap: 12px;
+  margin-left: 20%;
+  line-height: 1.3125rem;
+}
+
+.but h5 {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 2%;
+}
